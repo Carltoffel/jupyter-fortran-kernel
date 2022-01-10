@@ -12,12 +12,12 @@ kernel_json = {
     "argv": [
         "python3",
         "-m",
-        "jupyter_c_kernel",
+        "jupyter_fortran_kernel",
         "-f",
         "{connection_file}"
     ],
-    "display_name": "C",
-    "language": "c"
+    "display_name": "Fortran",
+    "language"    : "fortran"
 }
 
 
@@ -29,7 +29,7 @@ def install_my_kernel_spec(user=True, prefix=None):
         # TODO: Copy resources once they're specified
 
         print('Installing IPython kernel spec')
-        KernelSpecManager().install_kernel_spec(td, 'c', user=user, replace=True, prefix=prefix)
+        KernelSpecManager().install_kernel_spec(td, 'fortran', user=user, prefix=prefix)
 
 
 def _is_root():
@@ -41,7 +41,7 @@ def _is_root():
 
 def main(argv=[]):
     parser = argparse.ArgumentParser(
-        description='Install KernelSpec for C Kernel'
+        description='Install KernelSpec for Fortran Kernel'
     )
     prefix_locations = parser.add_mutually_exclusive_group()
 

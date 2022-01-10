@@ -1,18 +1,18 @@
 from setuptools import setup
 
-setup(name='jupyter_c_kernel',
-      version='1.2.1',
-      description='Minimalistic C kernel for Jupyter',
-      author='Brendan Rius',
-      author_email='ping@brendan-rius.com',
+setup(name='jupyter_fortran_kernel',
+      version='0.1.0',
+      description='Minimalistic Fortran kernel for Jupyter',
+      author='Carl Burkert',
+      author_email='ca.bu@posteo.de',
       license='MIT',
       classifiers=[
           'License :: OSI Approved :: MIT License',
       ],
-      url='https://github.com/brendan-rius/jupyter-c-kernel/',
-      download_url='https://github.com/brendan-rius/jupyter-c-kernel/tarball/1.2.1',
-      packages=['jupyter_c_kernel'],
-      scripts=['jupyter_c_kernel/install_c_kernel'],
-      keywords=['jupyter', 'notebook', 'kernel', 'c'],
+      url='https://github.com/Carltoffel/jupyter-fortran-kernel',
+      download_url='https://github.com/Carltoffel/jupyter-fortran-kernel/tarball/0.1.0',
+      packages=['jupyter_fortran_kernel'],
+      scripts=['jupyter_fortran_kernel/install_fortran_kernel'],
+      keywords=['jupyter', 'notebook', 'kernel', 'fortran'],
       include_package_data=True
       )
